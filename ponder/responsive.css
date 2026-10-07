@@ -22,10 +22,13 @@ section {
   margin: 1em;
   border: 1px solid #ccc;
 }
+
+nav {
+    display: none;
+}
 nav a {
     padding: 20px;
     color: black;
-    display: none;
 }
 nav a:hover {
     text-decoration: none;
@@ -41,6 +44,19 @@ nav a:hover {
     height: 4px;
     background-color: black;
     margin: 5px 0;
+}
+
+.menu-btn div {
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}  
+
+.change .bar1 {
+  transform: translate(0, 9px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -9px) rotate(45deg);
 }
 footer {
     text-align: center;
