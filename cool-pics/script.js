@@ -12,6 +12,7 @@ const mediaQuery = window.matchMedia('(min-width: 1024px)');
 images.addEventListener("click", function(event) {
     if (event.target.src != undefined) {
         dialogImage.src = event.target.src.replace("-sm", "-full");
+        dialogImage.alt = event.target.alt;
         dialog.showModal();
     }
 });
