@@ -34,6 +34,10 @@ h1 {
     margin: 0;
 }
 
+p {
+    font-size: 1.2rem;
+}
+
 .main-nav {
     list-style: none;
     padding: 0;
@@ -80,7 +84,6 @@ h1 {
 .books p {
     margin: 8px;
     text-align: right;
-
 }
 
 .books img {
