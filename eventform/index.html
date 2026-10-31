@@ -44,11 +44,11 @@
             </div>
             <div id="studentId" class="field full" hidden>
                 <label for="iNumber">Student I#</label>
-                <input id="iNumber" name="iNumber" type="text"/>
+                <input id="iNumber" name="iNumber" type="text" pattern="\d{9}" />
             </div>
             <div id="accessCode" class="field full" hidden>
                 <label for="code">Access Code</label>
-                <input id="code" name="code" type="text"/>
+                <input id="code" name="code" type="text" pattern="EVENT131" />
             </div>
             <button class="full" type="submit">Create Ticket</button>
             <section id="output" aria-live="polite"></section>
