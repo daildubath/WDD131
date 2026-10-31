@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #B8CDDA;
+    margin: 0;
+}
+
+main {
+    max-width: 700px;
+    margin: 25px 15px;
+    padding: 16px;
+    background: white;
+    border-radius: 12px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+input,
+select,
+button {
+    padding: 0.6rem;
+    font: inherit;
+}
+
+input,
+select {
+    border: 1px solid #767676;
+    border-radius: 4px;
+}
+
+input:valid,
+select:valid {
+    background-color: #E8EEFE;
+}
+
+input:focus,
+select:focus {
+    border: 3px solid #83ADE7;
+    outline: none;
+}
+
+button {
+    background: #B8CDDA;
+    transition: background 0.5s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #A1B5C2;
+}
+
+
+#studentId[hidden],
+#accessCode[hidden] {
+    display: none;
+}
+
+#output {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    main {
+        margin: 50px 15px;
+        padding: 20px;
+    }
+
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 770px) {
+    main {
+        margin: 50px auto;
+    }
+}

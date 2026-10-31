@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="benge">
+    <meta name="description" content="Ticket form that points no where.">
+    <title>Event Ticket Form</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="any">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Event Ticket</h1>
+        <form id="ticketForm">
+            <div class="field">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" required />
+            </div>
+
+            <div class="field">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" required />
+            </div>
+
+            <div class="field full">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required />
+            </div>
+            <div class="field">
+                <label for="type">Type</label>
+                <select id="type" name="Type" required>
+                    <option value="">Choose one</option>
+                    <option value="student">Student</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="eventDate">Event Date</label>
+                <input id="eventDate" name="eventDate" type="date" required />
+            </div>
+            <div id="studentId" class="field full" hidden>
+                <label for="iNumber">Student I#</label>
+                <input id="iNumber" name="iNumber" type="text"/>
+            </div>
+            <div id="accessCode" class="field full" hidden>
+                <label for="code">Access Code</label>
+                <input id="code" name="code" type="text"/>
+            </div>
+            <button class="full" type="submit">Create Ticket</button>
+            <section id="output" aria-live="polite"></section>
+        </form>
+    </main>
+</body>
+
+</html>
