@@ -1,5 +1,6 @@
 const characters = [
     {
+        
         name: "Snortleblat",
         class: "Swamp Beast Diplomat",
         level: 1,
@@ -33,7 +34,7 @@ const characters = [
 ];
 
 function createTemplate(character, characterIndex) {
-    
+
     return `
         <div class="card" id="card${characterIndex}">
             <img src="${character.image}" alt="${character.alt}">
@@ -49,17 +50,25 @@ function createTemplate(character, characterIndex) {
             </div>
         </div>
     `;
-    
+
 }
 
 const content = document.querySelector("#content");
 
 
 function renderCharacters() {
+    content.innerHTML = buildCharacterCards();
+
+
+    function buildCharacterCards() {
+        let innerHtml = "";
+        characters.forEach((character, characterIndex) => {
+            innerHtml += createTemplate(character, characterIndex);
+        });
+        return innerHtml;
+    }
+
     characters.forEach((character, characterIndex) => {
-
-        content.innerHTML += createTemplate(character, characterIndex);
-
         document.querySelector(`#card${characterIndex} .attackedButton`).addEventListener("click", event => {
             character.attacked();
             reloadCharacter(characterIndex);
@@ -69,7 +78,6 @@ function renderCharacters() {
             character.levelUp();
             reloadCharacter(characterIndex);
         });
-
     });
 }
 
