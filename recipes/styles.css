@@ -23,8 +23,13 @@ h1 {
 #searchButton {
     background-color: white;
     border: none;
-    height: 2.5em;
+    height: 32px;
     margin: 5px;
+}
+
+#searchButton:hover {
+    height: 35px;
+    margin: 2px;
 }
 
 #search {
