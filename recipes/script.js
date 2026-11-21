@@ -296,13 +296,19 @@ document.querySelector("#searchButton").addEventListener("click", () => {
         return (recipe.name.toLowerCase().includes(searchText) || recipe.tags.includes(searchText) || recipe.description.toLowerCase().includes(searchText));
     });
 
-    const sortedRecipes = filteredRecipes.sort();
+    const sortedRecipes = filteredRecipes.sort(sortRecipes);
 
     displayResults(sortedRecipes);
 
     console.log("searchActive");
 
 })
+
+function sortRecipes(a, b) {
+    if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+    if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+    return 0;
+}
 
 
 function displayResults(filteredRecipes) {
