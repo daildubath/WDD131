@@ -293,7 +293,7 @@ document.querySelector("#searchButton").addEventListener("click", () => {
     let searchText = document.querySelector("#search").value.toLowerCase();
 
     const filteredRecipes = recipes.filter((recipe) => {
-        return (recipe.name.toLowerCase().includes(searchText) || recipe.tags.includes(searchText) || recipe.description.toLowerCase().includes(searchText));
+        return (recipe.name.toLowerCase().includes(searchText) || recipe.tags.some((tag) => tag.toLowerCase().includes(searchText)) || recipe.description.toLowerCase().includes(searchText));
     });
 
     const sortedRecipes = filteredRecipes.sort(sortRecipes);
