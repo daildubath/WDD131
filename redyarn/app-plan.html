@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Site Plan</title>
+    <link type="text/css" rel="stylesheet" href="site-plan.css" />
+    <style>
+        /* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Short+Stack&display=swap');
+
+        :root {
+            /* change the values below to your colors from your palette */
+            --primary-color: #965a3e;
+            --secondary-color: #69422b;
+            --accent1-color: #ffe8da;
+            --accent2-color: #ffd0b4;
+
+            /* change the values below to your chosen font(s) */
+            --heading-font: "IM Fell French Canon SC";
+            --paragraph-font: "Short Stack", Helvetica, sans-serif;
+
+            /* these colors below should be chosen from among your palette colors above */
+            --headline-color-on-white: var(--primary-color);
+            /* headlines on a white background */
+            --headline-color-on-color: white;
+            /* headlines on a colored background */
+            --paragraph-color-on-white: var(--primary-color);
+            /* paragraph text on a white background */
+            --paragraph-color-on-color: white;
+            /* paragraph text on a colored background */
+            --paragraph-background-color: var(--primary-color);
+            --nav-link-color: var(--primary-color);
+            --nav-background-color: var(--secondary-color);
+            --nav-hover-link-color: white;
+            --nav-hover-background-color: var(--primary-color);
+        }
+
+        /*  Look around below...but DON'T CHANGE ANYTHING! */
+
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4em;
+            font-size: 18px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--heading-font);
+            color: var(--headline-color-on-white);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        hr {
+            height: 3px;
+            margin: 35px 0;
+            background: var(--accent1-color);
+        }
+
+        header {
+            padding: 1em;
+            text-align: center;
+            color: var(--paragraph-color-on-color);
+            background-color: var(--paragraph-background-color);
+        }
+
+        header>h1,
+        header>h2 {
+            color: var(--headline-color-on-color);
+        }
+
+        p {
+            font-family: var(--paragraph-font);
+            color: var(--paragraph-color);
+            padding: 1em;
+        }
+
+        .colors {
+            width: 100%;
+            min-width: 350px;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .colors th {
+            background-color: #999;
+        }
+
+        .colors td {
+            width: 25%;
+            height: 3em;
+        }
+
+        .primary {
+            background-color: var(--primary-color);
+        }
+
+        .dark {
+            background-color: #322C29;
+        }
+
+        .light {
+            background-color: #ebdfd1;
+        }
+
+        .board {
+            background-color: #A36C39;
+        }
+
+        .standard-pin {
+            background-color: #4759AA;
+        }
+
+        .yarn {
+            background-color: #CA0000;
+        }
+
+        .secondary {
+            background-color: var(--secondary-color);
+        }
+
+        .accent1 {
+            background-color: var(--accent1-color);
+        }
+
+        .accent2 {
+            background-color: var(--accent2-color);
+        }
+
+        p.colored {
+            background-color: var(--paragraph-background-color);
+            color: var(--paragraph-color-on-color);
+        }
+
+        nav {
+            background-color: var(--nav-background-color);
+            line-height: 3em;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        nav {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav a {
+            padding: 1em;
+            min-width: 120px;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:link,
+        nav a:visited {
+            color: var(--nav-link-color);
+        }
+
+        nav a:hover {
+            color: var(--nav-hover-link-color);
+            background-color: var(--nav-hover-background-color);
+        }
+
+        .sitemap {
+            display: grid;
+            justify-content: center;
+
+            grid-template-columns: repeat(6, 15%);
+            grid-template-rows: 3em 1.5em 1.5em 3em;
+            grid-template-areas:
+                ". . home home . ."
+                ". . . top . ."
+                ". left left right right ."
+                "page2 page2 . . page3 page3";
+        }
+
+        .sitemap>div {
+            text-align: center;
+        }
+
+        .sm-home {
+            grid-area: home;
+            background-color: #ccc;
+            line-height: 3em;
+        }
+
+        .sm-page2 {
+            grid-area: page2;
+            background-color: #ccc;
+            line-height: 3em;
+        }
+
+        .sm-page3 {
+            grid-area: page3;
+            background-color: #ccc;
+            line-height: 3em;
+        }
+
+        .top {
+            grid-area: top;
+            border-left: 1px solid;
+        }
+
+        .left {
+            grid-area: left;
+            border-top: 1px solid;
+            border-left: 1px solid;
+        }
+
+        .right {
+            grid-area: right;
+            border-top: 1px solid;
+            border-right: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Red Yarn Project Plan</h1>
+        <h2>Andrew Benge</h2>
+        <h2>WDD 131</h2>
+        <!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+    </header>
+    <main>
+
+        <hr />
+        <h2>Overview</h2>
+        <h3>Purpose</h3>
+        <p>To provide a simply designed, yet complex mystery game.</p>
+        <!-- change this -->
+
+        <h3>Audience</h3>
+        <p>My wife, and others like her who like to solve mysteries, puzzles and escape rooms instead of doing homework.</p>
+        <!-- change this -->
+
+        <h3>Dynamic elements</h3>
+        <p>The users will need to move around the pin board, be able to draw yarn across the screen which that will autosnap to the items, select notes/images on the board to make them larger/full screen (dialog box), and will need stats and progress tracked in variables. I also may, if time allows, add some asthetic animations and such that will require JS.</p>
+
+        <hr />
+        <h2>Branding</h2>
+        <h3>Website Logo</h3>
+        <!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+        <img src="logo.svg" alt="Red Yarn Logo image" />
+        <hr />
+        <h2>Style Guide</h2>
+
+        <h3>Color Palette</h3>
+        <!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+        <!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+        Palette URL:
+        <a href="https://coolors.co/ca0000-a36c39-322c29-ebdfd1-4759aa"
+            target="_blank">https://coolors.co/ca0000-a36c39-322c29-ebdfd1-4759aa</a>
+            <p>The site will not follow a strict color pallete. The background is an image the general color of board, there will be yarn, and then buttons will be "light" with black, or "dark" with white. An accent will be "pin". Why? Because the site is almost entirely images. Now, light and dark will also be borders to some images, so they are really the true color pallete, but the others will give an idea. Lots of image, you click and interact with them.</p>
+
+        <table class="colors">
+            <tbody>
+                <tr>
+                    <th>Board</th>
+                    <th>Yarn</th>
+                    <th>Dark</th>
+                    <th>light</th>
+                    <th>pin</th>
+                </tr>
+                <!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+                <tr>
+                    <td class="board">A36C39</td>
+                    <td class="yarn">CA0000</td>
+                    <td class="dark">322C29</td>
+                    <td class="light">EBDFD1</td>
+                    <td class="standard-pin">4759AA</td>
+
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        <h3>Pseudocode for your project</h3>
+
+        <p>
+            Images when selected will open dialog box with there reference, alt, and arial.
+            (listener on images, opens dialog, fills content)
+            Canvas will be used to draw yarn, automatically starting near nearest pin (probably based off of image), and ending at next. They will toggle a button to draw vs interact regularly.
+            (listener, area, and then a few things I haven't decided on best implementing.)
+            Pins are svg's, for now. When color is changed, the svg source will change.
+            (change source when button clicked)
+            A few other aspects are waiting on testing, such as completion requirements and tracking, but they will use variables, and likely be based off of yarn/pin color. 
+        </p>
+
+        <h3>Wireframes</h3>
+        <a href="pinboard.png">MainSratch</a>
+
+        <h3>Landing page</h3>
+        <p>
+            None needed. Matches wire frame. Preview below.
+        </p>
+        <img src="pinboard.png" alt="home page wireframe" width="700" />
+
+    </main>
+</body>
+
+</html>

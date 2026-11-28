@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-labelledby="title description">
+  <title id="title">Purple push pin</title>
+  <desc id="description">A purple push pin with broad aligned trapezoid ends, a tapered center, and a steel needle.</desc>
+  <defs>
+    <linearGradient id="pin" x1="0" y1="0" x2="1" y2="0.5">
+      <stop offset="0" stop-color="#4a1f74"/>
+      <stop offset=".45" stop-color="#763fb3"/>
+      <stop offset=".72" stop-color="#b183eb"/>
+      <stop offset="1" stop-color="#50217d"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#566674"/>
+      <stop offset=".35" stop-color="#f4f8fa"/>
+      <stop offset=".62" stop-color="#8b9aa6"/>
+      <stop offset=".86" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#677681"/>
+    </linearGradient>
+  </defs>
+  <path d="M283 276 L350 383 L291 271 Z" fill="url(#steel)" stroke="#596976" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M291 271 L350 383 L295 280 Z" fill="#ffffff" opacity=".72"/>
+  <path d="M232 124 L298 221 L237 255 L186 150 Z" fill="url(#pin)" stroke="#371654" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M222 143 L270 213" fill="none" stroke="#dfc3ff" stroke-width="8" stroke-linecap="round" opacity=".9"/>
+  <path d="M237 261 L298 227 L375 231 L201 331 Z" fill="#371654"/>
+  <path d="M237 255 L298 221 L375 225 L201 325 Z" fill="url(#pin)" stroke="#371654" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M226 304 L322 249" fill="none" stroke="#dfc3ff" stroke-width="8" stroke-linecap="round" opacity=".9"/>
+  <path d="M115 139 L253 61 L232 130 L186 156 Z" fill="#371654"/>
+  <path d="M115 133 L253 55 L232 124 L186 150 Z" fill="url(#pin)" stroke="#371654" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M137 119 L205 80" fill="none" stroke="#f0ddff" stroke-width="9" stroke-linecap="round" opacity=".9"/>
+</svg>

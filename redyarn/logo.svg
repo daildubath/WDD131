@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
+  <title id="title">Red ball of yarn logo</title>
+  <desc id="description">A red yarn ball with loose curved strands and a loose yarn tail.</desc>
+
+  <defs>
+    <radialGradient id="yarnRed" cx="35%" cy="28%" r="72%">
+      <stop offset="0%" stop-color="#ff5a52"/>
+      <stop offset="58%" stop-color="#df2928"/>
+      <stop offset="100%" stop-color="#a90d18"/>
+    </radialGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#6d1012" flood-opacity=".28"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <circle cx="258" cy="246" r="168" fill="url(#yarnRed)" stroke="#8e1018" stroke-width="10"/>
+
+    <!-- Curving wraps around the yarn ball -->
+    <path d="M118 178 C173 142 250 134 323 160 C380 180 414 221 423 270"
+          fill="none" stroke="#ff8a78" stroke-width="13" stroke-linecap="round"/>
+    <path d="M110 214 C174 184 256 180 330 207 C392 230 420 273 424 320"
+          fill="none" stroke="#a80d18" stroke-width="15" stroke-linecap="round"/>
+    <path d="M119 250 C180 218 274 218 347 249 C401 272 418 319 397 354"
+          fill="none" stroke="#ff6d60" stroke-width="12" stroke-linecap="round"/>
+    <path d="M139 298 C194 267 279 262 347 292 C381 307 398 338 386 369"
+          fill="none" stroke="#a40c17" stroke-width="14" stroke-linecap="round"/>
+
+    <path d="M150 130 C136 190 156 255 204 319 C240 367 281 394 334 407"
+          fill="none" stroke="#ff8172" stroke-width="12" stroke-linecap="round"/>
+    <path d="M199 106 C173 174 190 238 236 299 C276 352 318 373 367 383"
+          fill="none" stroke="#a90e18" stroke-width="14" stroke-linecap="round"/>
+    <path d="M256 91 C219 154 224 225 267 287 C300 335 343 360 391 364"
+          fill="none" stroke="#ff7567" stroke-width="12" stroke-linecap="round"/>
+    <path d="M322 109 C281 171 281 233 318 290 C347 334 378 348 402 337"
+          fill="none" stroke="#ab1019" stroke-width="13" stroke-linecap="round"/>
+    <path d="M365 139 C327 184 322 234 348 277 C365 305 383 316 410 322"
+          fill="none" stroke="#ff7869" stroke-width="11" stroke-linecap="round"/>
+
+    <!-- Loose end -->
+    <path d="M365 374 C423 379 459 360 449 339 C440 320 395 328 401 353 C407 378 378 409 335 424 C293 439 251 448 240 467"
+          fill="none" stroke="#b31820" stroke-width="13" stroke-linecap="round"/>
+  </g>
+</svg>
